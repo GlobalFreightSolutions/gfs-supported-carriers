@@ -1,0 +1,87 @@
+﻿<link rel="import" href="../polymer/polymer.html" />
+<link rel="import" href="../gfs-carrier-icon/gfs-carrier-icon.html" />
+
+<dom-module id="gfs-supported-carriers">
+
+    <template>
+        <style>
+            gfs-carrier-icon {
+                margin: 0.5em;
+            }
+            .heading {
+                font-size: 1em;
+                margin-left: -0.5em;
+                margin-right: -0.5em;
+                text-align: center;
+            }
+            #container {           
+                border: 1px solid #808080;
+                padding: 10px;
+                margin: 10px;    
+                background-color: #FAFAFA;
+                border-radius: 3px;
+                box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+                border: 1px solid #FAFAFA;
+            }
+            .stack-right {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+            }
+            .stack-horiz {
+                display: flex;
+                flex-direction: row;
+                padding: 10px;
+            }
+
+			@media (max-width: 490px) {
+				.stack-horiz {
+					padding-bottom: 0;
+					display: block
+				}
+			}
+        </style>
+        <div id="container">
+            <template is="dom-if" if="{{title}}">
+                <div class="heading">{{title}}</div>
+            </template>
+            <div class="stack-horiz">
+                <template is="dom-repeat" items="{{createCarrierList(carriers)}}">
+                    <gfs-carrier-icon icon-size="medium" carrier-code="{{item}}"></gfs-carrier-icon>
+                </template>
+            </div>
+        </div>       
+    </template>
+
+    <script>
+
+        Polymer({
+            is: "gfs-supported-carriers",
+
+            properties: {
+                'carriers': {
+                    type: String,
+                    value: ''
+                },
+                'iconSize': {
+                    type: String,
+                    value: 'medium'
+                },
+                'orientation': {
+                    type: String,
+                    value: 'row'
+                },
+                'title': {
+                    type: String,
+                    value: ''
+                }
+            },
+            createCarrierList: function(carriers) {
+                return this.carriers.split(' ');
+            },
+            listeners: {
+
+            },
+        });
+    </script>
+</dom-module>
