@@ -4,6 +4,7 @@
 	"description": "Add a description",
 	"dependencies": {
 		"polymer": "~1.6.0",
+	    "webcomponentsjs": "^0.7.22",
 		"gfs-carrier-icon": "https://github.com/GlobalFreightSolutions/gfs-carrier-icon.git"
 	},
 	"main":"gfs-supported-carriers.html",
