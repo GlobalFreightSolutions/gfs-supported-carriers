@@ -17,7 +17,7 @@
             #container {
                 border: 1px solid #808080;
                 padding: 10px;
-                background-color: #FAFAFA;
+                background-color: #fff;
                 border-radius: 3px;
                 box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
                 border: 1px solid #FAFAFA;
@@ -37,6 +37,13 @@
                 .stack-horiz {
                     padding-bottom: 0;
                     display: block
+                }
+            }
+
+            @media (max-width: 375px) {
+                .stack-horiz {
+                    width: 255px;
+                    margin: 0 auto;
                 }
             }
         </style>
