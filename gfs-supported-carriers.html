@@ -52,7 +52,7 @@
                 <div class="heading">{{title}}</div>
             </template>
             <div class="stack-horiz">
-                <template is="dom-repeat" items="{{createCarrierList(carriers)}}">
+                <template is="dom-repeat" items="{{createCarrierList(carriers, countrycode)}}">
                     <gfs-carrier-icon icon-size="medium" carrier-code="{{item}}"></gfs-carrier-icon>
                 </template>
             </div>
@@ -80,14 +80,18 @@
                 'title': {
                     type: String,
                     value: ''
+                },
+                'countrycode': {
+                    type: String,
+                    value: ''
                 }
             },
-            createCarrierList: function(carriers) {
+            createCarrierList: function(carriers, countrycode) {
                 return this.carriers.split(' ');
             },
             listeners: {
 
-            },
+            }
         });
     </script>
 </dom-module>
