@@ -52,8 +52,8 @@
                 <div class="heading">{{title}}</div>
             </template>
             <div class="stack-horiz">
-                <template is="dom-repeat" items="{{createCarrierList(carriers)}}">
-                    <gfs-carrier-icon icon-size="medium" carrier-name="{{item}}" country-code="{{countryCode}}"></gfs-carrier-icon>
+                <template is="dom-repeat" items="{{createCarrierList(carriers, iconSize)}}">
+                    <gfs-carrier-icon icon-size="{{iconSize}}" carrier-name="{{item}}" country-code="{{countryCode}}"></gfs-carrier-icon>
                 </template>
             </div>
         </div>
