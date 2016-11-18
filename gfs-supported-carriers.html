@@ -8,12 +8,9 @@
             gfs-carrier-icon {
                 margin: 0.5em;
             }
-            .heading {
-                font-size: 1em;
-                margin-left: -0.5em;
-                margin-right: -0.5em;
-                text-align: center;
-            }
+            div, span, h3 {
+				font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+			}
             #container {
                 border: 1px solid #808080;
                 padding: 10px;
@@ -49,7 +46,7 @@
         </style>
         <div id="container">
             <template is="dom-if" if="{{title}}">
-                <div class="heading">{{title}}</div>
+                <h3>{{title}}</h3>
             </template>
             <div class="stack-horiz">
                 <template is="dom-repeat" items="{{createCarrierList(carriers, iconSize)}}">
