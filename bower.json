@@ -1,23 +1,33 @@
 {
-	"name": "gfs-supported-carriers",
-	"version": "0.0.1",
-	"description": "Add a description",
-	"dependencies": {
-		"polymer": "~1.6.0",
-		"gfs-carrier-icon": "https://github.com/GlobalFreightSolutions/gfs-carrier-icon.git#master"
-	},
-	"devdependencies": {
-	    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
-		"iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
-		"web-component-tester": "^4.0.0",
-		"webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
-	},
-	"main":"gfs-supported-carriers.html",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/GlobalFreightSolutions/gfs-supported-carriers.git"
-	},
-	"ignore": [
-	], 
-	"private": true
+    "name": "gfs-supported-carriers",
+    "version": "0.0.1",
+    "description": "The Supported Carriers widget can be used to add a banner, showing the carriers that you use, to any page on your site",
+    "authors": [
+        "Global Freight Solutions Ltd <devsupport@justshoutgfs.com>"
+    ],
+    "keywords": [
+        "droppoint",
+        "gfs",
+        "checkout",
+        "polymer",
+        "web-components"
+    ],
+    "dependencies": {
+        "polymer": "~1.6.0",
+        "gfs-carrier-icon": "https://github.com/GlobalFreightSolutions/gfs-carrier-icon.git#master"
+    },
+    "devDependencies": {
+        "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+        "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+        "web-component-tester": "^4.0.0",
+        "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+    },
+    "main":"gfs-supported-carriers.html",
+    "license": "Apache 2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/GlobalFreightSolutions/gfs-supported-carriers.git"
+    },
+    "ignore": [
+    ]
 }

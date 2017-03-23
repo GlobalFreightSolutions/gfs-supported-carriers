@@ -1,0 +1,40 @@
+﻿<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+        <script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+        <script src="../bower_components/web-component-tester/browser.js"></script>
+
+        <link rel="import" href="../gfs-supported-carriers.html">
+    </head>
+    <body>
+        <test-fixture id="gfsSuportedCarriers">
+            <template>
+                <gfs-supported-carriers icon-size="medium" country-code="GB" carriers="dpd doddle collectplus hermes inpost dpdpickup yodel anpost arrowxl correos dhlexpress dhlfreight interlinkexpress iparcel itella nightfreight nightline palletforce parcelforce royalmail sanmarinomail seur spring tuffnells ukmail"></gfs-supported-carriers>
+            </template>
+        </test-fixture>
+
+        <script>
+            suite('gfs-supported-carriers', function() {
+
+                test('instantiating the element works', function() {
+                    var element = fixture('gfsSuportedCarriers');
+                    assert.equal(element.is, 'gfs-supported-carriers');
+                });
+
+                test('countrycode is set to GB', function() {
+                    var element = fixture('gfsSuportedCarriers');
+                    assert.equal(element.countryCode, "GB");
+                    assert.equal(element.iconSize, "medium");
+                });
+
+                test('list of all supported carriers', function() {
+                    var element = fixture('gfsSuportedCarriers');
+                    assert.equal(element.carriers, "dpd doddle collectplus hermes inpost dpdpickup yodel anpost arrowxl correos dhlexpress dhlfreight interlinkexpress iparcel itella nightfreight nightline palletforce parcelforce royalmail sanmarinomail seur spring tuffnells ukmail");
+                });
+            });
+        </script>
+    </body>
+</html>

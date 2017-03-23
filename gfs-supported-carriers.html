@@ -1,6 +1,14 @@
 ﻿<link rel="import" href="../polymer/polymer.html" />
 <link rel="import" href="../gfs-carrier-icon/gfs-carrier-icon.html" />
 
+<!--
+    `gfs-supported-carriers`
+    A polymer widget for displaying carrier's logo
+
+    @demo demo/index.html
+-->
+
+
 <dom-module id="gfs-supported-carriers">
 
     <template>
@@ -28,6 +36,13 @@
                 display: inline-block;
                 flex-direction: row;
                 padding: 10px;
+            }
+
+            @media (max-width: 667px) {
+                .stack-horiz {
+                    width: 100%;
+                    padding: 10px 0;
+                }
             }
 
             @media (max-width: 490px) {
@@ -84,9 +99,6 @@
             },
             createCarrierList: function(carriers) {
                 return this.carriers.split(' ');
-            },
-            listeners: {
-
             }
         });
     </script>
