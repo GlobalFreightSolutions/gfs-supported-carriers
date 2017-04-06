@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/GlobalFreightSolutions/gfs-supported-carriers.svg?branch=develop)](https://travis-ci.org/GlobalFreightSolutions/gfs-supported-carriers) [![Build Status](https://saucelabs.com/buildstatus/globalfreightsolutions)](https://saucelabs.com/beta/builds/816d552c401a41df8e8c5113f4bee0cd)
 
 
 # &lt;gfs-supported-carriers&gt;
