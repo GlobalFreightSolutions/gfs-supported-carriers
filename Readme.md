@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/GlobalFreightSolutions/gfs-supported-carrier.svg?branch=develop)](https://travis-ci.org/GlobalFreightSolutions/gfs-supported-carrier)
+[![Build Status](https://travis-ci.org/GlobalFreightSolutions/gfs-supported-carriers.svg?branch=master)](https://travis-ci.org/GlobalFreightSolutions/gfs-supported-carriers)
 
 
 # &lt;gfs-supported-carriers&gt;
