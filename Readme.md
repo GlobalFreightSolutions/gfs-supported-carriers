@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/GlobalFreightSolutions/gfs-supported-carriers.svg?branch=develop)](https://travis-ci.org/GlobalFreightSolutions/gfs-supported-carriers) [![Build Status](https://saucelabs.com/buildstatus/globalfreightsolutions)](https://saucelabs.com/beta/builds/816d552c401a41df8e8c5113f4bee0cd)
+[![Build Status](https://travis-ci.org/GlobalFreightSolutions/gfs-supported-carriers.svg?branch=master)](https://travis-ci.org/GlobalFreightSolutions/gfs-supported-carriers)
 
 
 # &lt;gfs-supported-carriers&gt;
@@ -48,7 +48,7 @@ $ bower install --save gfs-supported-carrier
 </gfs-supported-carriers>
 ```
 
-More info and all the available properties can be found at [GFS widget portal](http://gfsdeveloperportal.azurewebsites.net/documentation/gfs-checkout/the-gfs-checkout-widgets/supported-carriers-widget/ "The Supported Carriers Widget")
+More info and all the available properties can be found at [GFS widget portal](http://developer.justshoutgfs.com/info/documentation/gfs-checkout/the-gfs-checkout-widgets/supported-carriers-widget/ "The Supported Carriers Widget")
 
 
 ## License
