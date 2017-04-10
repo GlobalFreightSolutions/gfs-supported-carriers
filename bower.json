@@ -14,7 +14,7 @@
     ],
     "dependencies": {
         "polymer": "~1.6.0",
-        "gfs-carrier-icon": "https://github.com/GlobalFreightSolutions/gfs-carrier-icon.git#master"
+        "gfs-carrier-icon": "^1.0.0"
     },
     "devDependencies": {
         "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
