@@ -1,6 +1,6 @@
 {
     "name": "gfs-supported-carriers",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "The Supported Carriers widget can be used to add a banner, showing the carriers that you use, to any page on your site",
     "authors": [
         "Global Freight Solutions Ltd <devsupport@justshoutgfs.com>"
@@ -13,8 +13,8 @@
         "web-components"
     ],
     "dependencies": {
-        "polymer": "~1.6.0",
-        "gfs-carrier-icon": "^1.0.0"
+        "polymer": "^1.10.0",
+        "gfs-carrier-icon": "^1.1.0"
     },
     "devDependencies": {
         "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
@@ -27,7 +27,5 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/GlobalFreightSolutions/gfs-supported-carriers.git"
-    },
-    "ignore": [
-    ]
+    }
 }

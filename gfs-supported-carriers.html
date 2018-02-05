@@ -8,17 +8,15 @@
     @demo demo/index.html
 -->
 
-
 <dom-module id="gfs-supported-carriers">
-
     <template>
-        <style>
+        <style is="custom-style">
             gfs-carrier-icon {
                 margin: 0.5em;
             }
             div, span, h3 {
-				font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
-			}
+                font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+            }
             #container {
                 border: 1px solid #808080;
                 padding: 10px;
@@ -59,6 +57,7 @@
                 }
             }
         </style>
+
         <div id="container">
             <template is="dom-if" if="{{title}}">
                 <h3>{{title}}</h3>
