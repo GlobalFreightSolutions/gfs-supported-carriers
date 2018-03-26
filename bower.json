@@ -1,6 +1,6 @@
 {
     "name": "gfs-supported-carriers",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "The Supported Carriers widget can be used to add a banner, showing the carriers that you use, to any page on your site",
     "authors": [
         "Global Freight Solutions Ltd <devsupport@justshoutgfs.com>"
@@ -27,5 +27,8 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/GlobalFreightSolutions/gfs-supported-carriers.git"
+    },
+    "resolutions": {
+        "polymer": "^1.10.0"
     }
 }
